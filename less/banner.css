@@ -1,0 +1,21 @@
+.sn_banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.sn_banner ul {
+  margin: 0;
+  padding: 0;
+}
+.sn_banner ul:first-child {
+  width: 1000%;
+  transform: translateX(-10%);
+}
+.sn_banner ul:first-child li {
+  width: 10%;
+  float: left;
+}
+.sn_banner ul:last-child {
+  width: 100%;
+  height: ;
+}

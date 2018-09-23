@@ -1,0 +1,10 @@
+//循环遍历当前主流的屏幕的字体大小 ，所有的容器尺寸发生等比缩放
+.fz(@count)when(@count <=length(@deviceWidth)){
+    @media (min-width:extract(@deviceWidth,@count)) {
+        html{
+            font-size: extract(@deviceWidth,@count)/@psdw*@bs;
+        }
+    }
+    .fz(@count+1);
+}
+.fz(1);
